@@ -1,0 +1,138 @@
+{
+  "total_questions": 50,
+  "per_distribution": {
+    "factual": {
+      "count": 20,
+      "faithfulness": 0.95,
+      "answer_relevancy": 0.7995715753375864,
+      "context_precision": 0.9666666666083333,
+      "context_recall": 0.85,
+      "avg_score": 0.89155956048648
+    },
+    "multi_hop": {
+      "count": 20,
+      "faithfulness": 0.5642857142857143,
+      "answer_relevancy": 0.7082755982317176,
+      "context_precision": 0.9833333332958333,
+      "context_recall": 0.7791666666666667,
+      "avg_score": 0.7587653281199829
+    },
+    "adversarial": {
+      "count": 10,
+      "faithfulness": 0.7,
+      "answer_relevancy": 0.5935032902237388,
+      "context_precision": 0.966666666615,
+      "context_recall": 0.65,
+      "avg_score": 0.7275424892096847
+    }
+  },
+  "failure_clusters": {
+    "matrix": {
+      "faithfulness": {
+        "factual": 1,
+        "multi_hop": 15,
+        "adversarial": 3
+      },
+      "context_recall": {
+        "factual": 4,
+        "multi_hop": 3,
+        "adversarial": 7
+      },
+      "context_precision": {
+        "factual": 2,
+        "multi_hop": 0,
+        "adversarial": 0
+      },
+      "answer_relevancy": {
+        "factual": 13,
+        "multi_hop": 2,
+        "adversarial": 0
+      }
+    },
+    "dominant_failure_distribution": "factual",
+    "dominant_failure_metric": "faithfulness",
+    "insight": "Distribution 'factual' có nhiều failure nhất. Metric 'faithfulness' là điểm yếu chủ đạo. Gợi ý: Tighten system prompt, lower temperature"
+  },
+  "bottom_10": [
+    {
+      "rank": 1,
+      "question_id": 46,
+      "distribution": "adversarial",
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "avg_score": 0.375,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 2,
+      "question_id": 33,
+      "distribution": "multi_hop",
+      "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm theo v2024 là bao nhiêu?",
+      "avg_score": 0.375,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 3,
+      "question_id": 48,
+      "distribution": "adversarial",
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm sức khỏe PVI không?",
+      "avg_score": 0.4167,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 4,
+      "question_id": 50,
+      "distribution": "adversarial",
+      "question": "Nhân viên Manager có thể dùng VPN cá nhân (như NordVPN) khi WFH để tăng bảo mật thêm không?",
+      "avg_score": 0.4167,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 5,
+      "question_id": 9,
+      "distribution": "factual",
+      "question": "Nam nhân viên được nghỉ bao nhiêu ngày khi vợ sinh con?",
+      "avg_score": 0.4583,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 6,
+      "question_id": 21,
+      "distribution": "multi_hop",
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "avg_score": 0.4583,
+      "worst_metric": "answer_relevancy"
+    },
+    {
+      "rank": 7,
+      "question_id": 39,
+      "distribution": "multi_hop",
+      "question": "So sánh yêu cầu mật khẩu giữa policy v1.0 và v2.0 về độ dài tối thiểu, thời hạn đổi và MFA.",
+      "avg_score": 0.4583,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 8,
+      "question_id": 31,
+      "distribution": "multi_hop",
+      "question": "Nhân viên đi công tác trong nước 2 ngày, ở khách sạn giá 1.500.000 VNĐ/đêm. Công ty thanh toán tối đa bao nhiêu cho tiền khách sạn?",
+      "avg_score": 0.622,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 9,
+      "question_id": 24,
+      "distribution": "multi_hop",
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "avg_score": 0.6438,
+      "worst_metric": "faithfulness"
+    },
+    {
+      "rank": 10,
+      "question_id": 38,
+      "distribution": "multi_hop",
+      "question": "Nhân viên đi công tác nước ngoài 4 ngày tại thành phố lớn, ở khách sạn 200 USD/đêm (3 đêm). Công ty thanh toán bao nhiêu tiền khách sạn?",
+      "avg_score": 0.6781,
+      "worst_metric": "faithfulness"
+    }
+  ]
+}
